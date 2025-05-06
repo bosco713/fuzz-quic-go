@@ -16,3 +16,6 @@ fuzzing/*/suppressions
 fuzzing/*/corpus/
 
 gomock_reflect_*/
+bin/ca.pem
+bin/cert.pem
+bin/priv.pem
