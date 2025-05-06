@@ -12,6 +12,7 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+	"C"
 
 	_ "net/http/pprof"
 
@@ -127,7 +128,8 @@ func setupHandler(www string) http.Handler {
 	return mux
 }
 
-func main() {
+//export goMain
+func goMain() {
 	// defer profile.Start().Stop()
 	go func() {
 		log.Println(http.ListenAndServe("localhost:6060", nil))
@@ -181,4 +183,8 @@ func main() {
 		}()
 	}
 	wg.Wait()
+}
+
+func main() {
+	goMain()
 }
