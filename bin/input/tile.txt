@@ -1,0 +1,4 @@
+GET /demo/tile HTTP/3
+Host: localhost:6121
+User-Agent: curl/8.14.0-DEV
+Accept: */*

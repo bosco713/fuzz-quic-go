@@ -1,0 +1,13 @@
+POST /demo/upload HTTP/3
+Host: localhost:6121
+User-Agent: curl/8.14.0-DEV
+Accept: */*
+Content-Length: 270
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarynxAyjXSJ72lznZub
+
+------WebKitFormBoundarynxAyjXSJ72lznZub
+Content-Disposition: form-data; name="uploadfile"; filename="../tile.png"
+Content-Type: image/png
+
+
+------WebKitFormBoundarynxAyjXSJ72lznZub--
