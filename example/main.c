@@ -8,28 +8,28 @@ int main(int argc, char *argv[]) {
     char* key = "";
     char* cert = "";
     for (int i=1; i<argc; i++) {
-        if (argv[i] == "-www") {
+	if (strcmp(argv[i], "-www") == 0) {
             www = argv[i+1];
             continue;
         }
-        if (argv[i] == "-tcp") {
+	if (strcmp(argv[i], "-tcp") == 0) {
             tcp = 1;
             continue;
         }
-        if (argv[i] == "-key") {
+	if (strcmp(argv[i], "-key") == 0) {
             key = argv[i+1];
             continue;
         }
-        if (argv[i] == "-cert") {
+	if (strcmp(argv[i], "-cert") == 0) {
             cert = argv[i+1];
             continue;
         }
     }
 
-    GoString addr = {"localhost:6121", len("localhost:6121")};
-    GoString certGoString = {cert, len(cert)};
-    GoString keyGoString = {key, len(key)};
-    GoString wwwGoString = {www, len(www)};
+    GoString addr = {"localhost:6121", strlen("localhost:6121")};
+    GoString certGoString = {cert, strlen(cert)};
+    GoString keyGoString = {key, strlen(key)};
+    GoString wwwGoString = {www, strlen(www)};
     ListenAndServeTLS(addr, certGoString, keyGoString, wwwGoString);    
 
     return 0;
