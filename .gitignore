@@ -6,6 +6,7 @@ mockgen_tmp.go
 *.qlog
 *.sqlog
 *.txt
+!bin/input/*
 race.[0-9]*
 
 fuzzing/*/*.zip
