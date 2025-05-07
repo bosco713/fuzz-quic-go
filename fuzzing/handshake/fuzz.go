@@ -1,6 +1,7 @@
 package handshake
 
 import (
+	"C"
 	"context"
 	"crypto/ed25519"
 	"crypto/rand"
@@ -14,7 +15,6 @@ import (
 	mrand "math/rand/v2"
 	"net"
 	"time"
-	"C"
 
 	"github.com/quic-go/quic-go/fuzzing/internal/helper"
 	"github.com/quic-go/quic-go/internal/handshake"
@@ -140,7 +140,6 @@ const (
 // Fuzz fuzzes the TLS 1.3 handshake used by QUIC.
 //
 //go:generate go run ./cmd/corpus.go
-//export Fuzz
 func Fuzz(data []byte) int {
 	if len(data) < PrefixLen {
 		return -1
