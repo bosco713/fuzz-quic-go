@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "http3/http3.h"
 
 int main(int argc, char *argv[]) {
     char* www = "";
@@ -25,7 +26,11 @@ int main(int argc, char *argv[]) {
         }
     }
 
-
+    GoString addr = {"localhost:6121", len("localhost:6121")};
+    GoString certGoString = {cert, len(cert)};
+    GoString keyGoString = {key, len(key)};
+    GoString wwwGoString = {www, len(www)};
+    ListenAndServeTLS(addr, certGoString, keyGoString, wwwGoString);    
 
     return 0;
 }

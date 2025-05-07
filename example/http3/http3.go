@@ -128,7 +128,3 @@ func ListenAndServeTLS(addr, certFile, keyFile, www string) error {
 	handler := setupHandler(www)
 	return http3.ListenAndServeTLS(addr, certFile, keyFile, handler)
 }
-
-func main() {
-	return
-}
