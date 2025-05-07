@@ -1,6 +1,7 @@
 package main
 
 import (
+	"C"
 	"crypto/md5"
 	"errors"
 	"flag"
@@ -12,7 +13,6 @@ import (
 	"strconv"
 	"strings"
 	"sync"
-	"C"
 
 	_ "net/http/pprof"
 
