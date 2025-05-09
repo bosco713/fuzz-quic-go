@@ -1,4 +1,9 @@
-# A QUIC implementation in pure Go
+# HKUST COMP4634 Final Project: Fuzzing of HTTP/3 protocol implementations
+This project is built on top of quic-go. You can start fuzzing using the start.sh after you have set up your environment for AFLNET and go. As AFLNET only works on c/cpp executables, you may expect the code coverage guiding the fuzzing of lower than usual. Feel free to rewrite some of the code around the example/main.go so to export more function for the fuzzer to explore on. (using //export tag)
+
+Author: bosco713
+
+## A QUIC implementation in pure Go
 
 <img src="docs/quic.png" width=303 height=124>
 

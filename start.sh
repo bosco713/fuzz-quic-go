@@ -12,18 +12,18 @@ else
 fi
 echo "What is the targeted path with main.go (or a go file inside main pacakge with func main()) to build with? (please do not provide the file name here)"
 read targetPath
-echo "targetPath $targetPath"
+# echo "targetPath $targetPath"
 echo "What is the dir you want the executable be in?"
 read binDir
-echo "binDir $binDir"
+# echo "binDir $binDir"
 echo "Please specify the executable name"
 read exeName
-echo "exeName $exeName"
+# echo "exeName $exeName"
 
 currentDir="$(pwd)"
-echo "currentDir $currentDir"
+# echo "currentDir $currentDir"
 cd $targetPath
-echo "pwd $(pwd)"
+# echo "pwd $(pwd)"
 CC=afl-clang-fast go build -o $exeName ./
 cd $currentDir
 mkdir $binDir
