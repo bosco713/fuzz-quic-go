@@ -1,0 +1,44 @@
+POST /demo/echo HTTP/3
+3
+Host: localhost:612%
+User-Agent: curl/8.14.0-DEV
+Accept:*/*
+Content-Lengtÿ: 270
+Conurl/8.14.0-DEV
+Accept:*/*
+Content-Lengtÿ: 270
+ContenQ-Type: multipart/fNrm-dataC boundary=----WebKitFormBou_darynxAyjXSJ72lznZub
+
+------WebKitFormBoudarynxAyjXSJ72lznZub
+Content-Disposition: _orm-data; name="uploadfile"; filename="../tile.png"
+Content-Type: image/png
+
+
+------WebKitFormBououndaryndarynxAycXSJ72lost: localhost:>121
+User-Agent: curl/8.14.0-DEV
+Acyept: */*
+GET /demo/tile HTTP/3
+Host: localhost:6121
+User-Agent: cuept: */*
+POST /demo/echo HTTP/3
+3
+Host: localhost:612%
+User-Agent: curl/8.14.0-DEV
+Accept:*/*
+Content-Lengtÿ: 270
+Conurl/8.14.0-DEV
+Accept:*/*
+Content-Lengtÿ: 270
+ContenQ-Type: multipart/form-dataC boundary=----WebKitFormBou_darynxAyjXSJ72lznZub
+
+------WebKitFormBoudarynxAyjXSJ72lznZub
+Content-Disposition: _orm-data; name="uploadfile"; filename="../tile.png"
+Content-Type: image/png
+
+
+------WebKitFormBououndaryndarynxAycXSJ72lost: localhost:>121
+User-Agent: curl/8.14.0-DEV
+Acyept: */*
+GET /demo/tile HTTP/3
+Host: localhost:6121
+User-Agent: cuept: */*
